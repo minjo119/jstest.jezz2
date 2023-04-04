@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAZZ</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        body{
+            font-family: 'Noto Sans KR', sans-serif;
+            margin: 0;
+            height: 2000px;
+            background-color: rgb(0, 0, 0);
+        }
+        section{
+            width: 100%;
+            height: 100vh;
+            text-align: center;
+        }
+        /*section:nth-child(odd) {
+            background-color: rgb(224, 224, 224);
+        }*/
+        .wrapper{
+            padding-top: 80px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+    
+
+        h1{
+            color: rgb(213, 15, 61);
+            font-size: 48px;
+        }
+
+        h3{color: #eeeaec;
+            font-size: 24px;
+            font-weight: 300;
+        }
+        h6{ color: #eeeaec;
+            font-size: 12px;
+        }
+        p{
+            color: rgb(212, 211, 208);
+        }
+
+        .btns{
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 10;
+        }
+        .btns .container{
+            position: relative;
+            max-width: 100%;
+            height: 50px;
+            padding: 10px;
+            background-color: #eeeaec00;
+            margin: auto;
+        }
+        .btns__menu{
+            display: flex;
+            justify-content: center;
+        }
+        .btns__menu .btn{
+            font-size: 16px;
+            font-weight: 700;
+            color: #193a40;
+            /* boder: 1px solid #4d7f8c */
+            width: 150px;
+            height: 40px;
+            border-radius: 6px;
+            margin: 4px;
+            cursor: pointer;
+            background-color: rgb(240, 235, 237);
+        }
+        .btns__menu .btn:hover {
+            background-color: white;
+            border: 1px solid #ffffff;
+        }
+        button{
+            background-color: transparent;
+            cursor: pointer;
+            border: none;
+            outline: none;
+        }
+        .arrow-up{
+            position: fixed;
+            bottom: 60px;
+            right: 50px;
+            width: 70px;
+            height: 70px;
+            color: white;
+            background-color: rgb(187, 0, 0);
+            border-radius: 50%;
+            text-align: center;
+            opacity:0;
+            transition: .3s;
+        }
+        .arrow-up span{
+            font-size: 40px;
+        }
+        .arrow-up.show{
+            opacity: 1;
+        }
+        
+        .btns .container{
+        background-color: rgb(240 235, 237);
+        transition: .3s;
+        }
+        
+        .btns .container.show{
+            background-color: rgba(18, 17, 17, 0);
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="btns">
+        <div class="container">
+            <div class="btns__menu">
+                <button class="btn about">About</button>
+                <button class="btn chet">dawn</button>
+                <button class="btn erik">dusk</button>
+                <button class="btn ella">sleeping</button>
+                <button class="btn mon">moning</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <section id="about">
+        <div class="wrapper">
+            <img src="JAZZ IS EVERYWHERE.png" alt="">
+            <h1>JAZZ IS EVERYWHERE</h1>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/3dWy50rFgvg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  
+        </div>
+    </section>
+
+    <section id="chet">
+        <div class="wrapper">
+            <h1>Chet Baker</h1>
+            <a href="https://youtu.be/25kyuiV4lzA" style="text-decoration: none;">
+                <img src="chet baker.webp" alt=""></a>
+            <h3>"I don't believe that jazz will ever really die. <br>
+                It's a nice way to express yourself." </h3>
+
+        </div>
+    </section>
+
+
+
+    <section id="erik">
+        <div class="wrapper">
+            <h1>Erik Satie</h1>
+            <a href="https://youtu.be/6inchVGLftk" style="text-decoration: none;">
+                <img src="erik.webp" alt=""></a>
+            <h3>"I came into the world very young, <br>
+            in an age that was very old."</h3>
+            <h6>"Je suis venu au monde tres jeune dans un temps tres vieux."</h6>
+
+        </div>
+    </section>
+
+    <section id="ella">
+        <div class="wrapper">            
+            <h1>Ella Fitzgerald</h1>
+            <a href="https://youtu.be/ywVgqzqbwpg" style="text-decoration: none;"><img src="ella.webp" alt=""></a>
+            <h3>"Where there is love and inspiration,<br>
+                I don't think you can go wrong."</h3>
+        </div>
+    </section>
+
+    <section id="mon">
+        <div class="wrapper">
+            <h1>Thelonious Monk</h1>
+            <a href="https://youtu.be/AW-eh2-ymEs"> <img src="monk.webp" alt=""></a>
+            <h3>“A genius is the one most like himself.”</h3>
+        </div>
+
+
+        <button class="arrow-up">
+            <span class="material-symbols-outlined">
+                arrow_upward
+            </span>
+        </button>
+    </section>
+
+
+
+    <script>
+        const btnAbout = document.querySelector('.about');
+        const sectionAbout = document.querySelector('#about');
+        btnAbout.addEventListener('click', function() {
+            sectionAbout.scrollIntoView({behavior:"smooth", block:"center"});
+        })
+        const btnChet = document.querySelector('.chet');
+        const sectionChet = document.querySelector('#chet');
+        btnChet.addEventListener('click', function() {
+            sectionChet.scrollIntoView({behavior:"smooth", block:"center"});
+        })
+        const btnErik = document.querySelector('.erik');
+        const sectionErik = document.querySelector('#erik');
+        btnErik.addEventListener('click', function() {
+            sectionErik.scrollIntoView({behavior:"smooth", block:"center"});
+        })
+        const btnElla = document.querySelector('.ella');
+        const sectionElla = document.querySelector('#ella');
+        btnElla.addEventListener('click', function() {
+            sectionElla.scrollIntoView({behavior:"smooth", block:"center"});
+        })
+        const btnMon = document.querySelector('.mon');
+        const sectionMon = document.querySelector('#mon');
+        btnMon.addEventListener('click', function() {
+            sectionMon.scrollIntoView({behavior:"smooth", block:"center"});
+        })
+
+
+        const arrowUp = document.querySelector('.arrow-up')
+        arrowUp.addEventListener('click',function() {
+            sectionAbout.scrollIntoView({behavior:"smooth", block:"center"})
+        })
+        document.addEventListener('scroll', function() { 
+            if (window.scrollY > 300) {
+                arrowUp.classList.add('show');
+        } else {
+            arrowUp.classList.remove('show'); }
+        })
+
+        const btns__menu = document.querySelector('.container')
+        document.addEventListener('scroll', function() { 
+            if (window.scrollY > 300) {
+                btns__menu.classList.add('show');
+        } else {
+            btns__menu.classList.remove('show'); }
+        })
+
+
+        
+
+
+        
+
+
+    </script>
+
+
+
+
+
+</body>
+</html>
